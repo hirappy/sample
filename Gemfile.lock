@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/mongoid/moped.git
+  revision: 803bbcd2e631361f73dcc2b11cf2320804eaa73f
+  specs:
+    moped (2.0.6)
+      bson (~> 3.0)
+      connection_pool (~> 2.0)
+      optionable (~> 0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -78,10 +87,6 @@ GEM
       moped (~> 2.0.0)
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
-    moped (2.0.6)
-      bson (~> 3.0)
-      connection_pool (~> 2.0)
-      optionable (~> 0.2.0)
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -154,11 +159,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
   mongoid (~> 4.0.0)
+  moped!
   rails (= 4.2.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
