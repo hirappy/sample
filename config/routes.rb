@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => 'drinks#index'
   resources :materials
   resources :drinks
   # The priority is based upon order of creation: first created -> highest priority.
