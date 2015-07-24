@@ -22,10 +22,16 @@
     </div>
     <%= error_span(@drink[:name]) %>
   </div>
+  <div class="control-group">
+    <%= f.label :materials, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :id, Material.all, :id, :name,{:include_blank => ''}, {class: "form-control"} %>
+    </div>
+    <%= error_span(@drink[:name]) %>
+  </div>
 
 
   <%= f.submit nil, :class => 'btn btn-primary' %>
-  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-            drinks_path, :class => 'btn btn-default' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),drinks_path, :class => 'btn btn-default' %>
 
 <% end %>

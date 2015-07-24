@@ -1,6 +1,6 @@
 class DrinksController < ApplicationController
   before_action :set_drink, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /drinks
   # GET /drinks.json
   def index
